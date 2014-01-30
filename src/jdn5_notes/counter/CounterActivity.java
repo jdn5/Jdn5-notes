@@ -21,15 +21,19 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import java.util.Collection;
 
+
+// Main application
 public class CounterActivity extends Activity
 {
 
-	Button createcounter;
-	EditText namebox;
-	ArrayList<CounterObject> list;
+	private Button createcounter;
+	private EditText namebox;
+	private ArrayList<CounterObject> list;
 	private ListView counters;
-	private ArrayAdapter<CounterObject> adapter;
+	private ArrayAdapter<String> adapter;
+	private ArrayList<String> objects;
 	Gson gson;
 	
 	@Override
@@ -37,7 +41,9 @@ public class CounterActivity extends Activity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_counter);
+		// Initialize button for counter creation
 		createcounter = (Button)findViewById(R.id.createcounter);
+		// Set namebox for naming counters
 		namebox = (EditText) findViewById(R.id.namebox);
 		counters = (ListView) findViewById(R.id.listView);
 		
@@ -46,9 +52,9 @@ public class CounterActivity extends Activity
 	protected void onStart() {
 		// TODO Auto-generated method stub
 		super.onStart();
-		list = new ArrayList<CounterObject>();
-		adapter = new ArrayAdapter<CounterObject>(this,
-				R.layout.activity_counter, list);
+		objects = new ArrayList<String>();
+		adapter = new ArrayAdapter<String>(this,
+				R.layout.activity_counter, objects);
 		counters.setAdapter(adapter);
 	}
 
@@ -61,39 +67,76 @@ public class CounterActivity extends Activity
 		return true;
 	}
 	
-	public void newCounter(View view){
+	public void newCounter(View view){ // Function used for New counter button
 		String name = namebox.getText().toString();
 		CounterObject c = new CounterObject(name);
 		list.add(c);
-		//adapter.notifyDataSetChanged();
+		objects.add(c.showData());
+		adapter.notifyDataSetChanged();
 	}
 
-	/**
-	 * @uml.property  name="counterObject"
-	 * @uml.associationEnd  inverse="counterActivity:jdn5_notes.counter.CounterObject"
+	/** 
+	 * @uml.property name="counterObject"
+	 * @uml.associationEnd multiplicity="(0 -1)" inverse="counterActivity:jdn5_notes.counter.CounterObject"
 	 */
-	private CounterObject counterObject;
+	private Collection<CounterObject> counterObject;
 
-	/**
+	/** 
 	 * Getter of the property <tt>counterObject</tt>
 	 * @return  Returns the counterObject.
 	 * @uml.property  name="counterObject"
 	 */
-	public CounterObject getCounterObject()
+	public Collection<CounterObject> getCounterObject()
+	
+	
+	
+	
 	{
-
 		return counterObject;
 	}
 
-	/**
+	/** 
 	 * Setter of the property <tt>counterObject</tt>
 	 * @param counterObject  The counterObject to set.
 	 * @uml.property  name="counterObject"
 	 */
-	public void setCounterObject(CounterObject counterObject)
+	public void setCounterObject(Collection<CounterObject> counterObject)
+	
+	
+	
 	{
-
+	
 		this.counterObject = counterObject;
+	}
+
+	/** 
+	 * @uml.property name="counterObject1"
+	 * @uml.associationEnd multiplicity="(0 -1)" aggregation="shared" inverse="counterActivity1:jdn5_notes.counter.CounterObject"
+	 */
+	private Collection<CounterObject> counterObject1;
+
+	/** 
+	 * Getter of the property <tt>counterObject1</tt>
+	 * @return  Returns the counterObject1.
+	 * @uml.property  name="counterObject1"
+	 */
+	public Collection<CounterObject> getCounterObject1()
+	
+	
+	{
+		return counterObject1;
+	}
+
+	/** 
+	 * Setter of the property <tt>counterObject1</tt>
+	 * @param counterObject1  The counterObject1 to set.
+	 * @uml.property  name="counterObject1"
+	 */
+	public void setCounterObject1(Collection<CounterObject> counterObject1)
+	
+	
+	{
+		this.counterObject1 = counterObject1;
 	}
 
 }
