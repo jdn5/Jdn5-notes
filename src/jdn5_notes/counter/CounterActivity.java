@@ -75,68 +75,63 @@ public class CounterActivity extends Activity
 		adapter.notifyDataSetChanged();
 	}
 
-	/** 
-	 * @uml.property name="counterObject"
-	 * @uml.associationEnd multiplicity="(0 -1)" inverse="counterActivity:jdn5_notes.counter.CounterObject"
+	
+	// Methods created by UML chart
+	/**
+	 * @uml.property  name="counterObject"
+	 * @uml.associationEnd  multiplicity="(0 -1)" inverse="counterActivity:jdn5_notes.counter.CounterObject"
 	 */
 	private Collection<CounterObject> counterObject;
 
-	/** 
+	/**
 	 * Getter of the property <tt>counterObject</tt>
 	 * @return  Returns the counterObject.
 	 * @uml.property  name="counterObject"
 	 */
 	public Collection<CounterObject> getCounterObject()
 	
-	
-	
-	
 	{
+	
 		return counterObject;
 	}
 
-	/** 
+	/**
 	 * Setter of the property <tt>counterObject</tt>
 	 * @param counterObject  The counterObject to set.
 	 * @uml.property  name="counterObject"
 	 */
 	public void setCounterObject(Collection<CounterObject> counterObject)
 	
-	
-	
 	{
 	
 		this.counterObject = counterObject;
 	}
 
-	/** 
-	 * @uml.property name="counterObject1"
-	 * @uml.associationEnd multiplicity="(0 -1)" aggregation="shared" inverse="counterActivity1:jdn5_notes.counter.CounterObject"
+	/**
+	 * @uml.property  name="counterObject1"
+	 * @uml.associationEnd  multiplicity="(0 -1)" aggregation="shared" inverse="counterActivity1:jdn5_notes.counter.CounterObject"
 	 */
 	private Collection<CounterObject> counterObject1;
 
-	/** 
+	/**
 	 * Getter of the property <tt>counterObject1</tt>
 	 * @return  Returns the counterObject1.
 	 * @uml.property  name="counterObject1"
 	 */
 	public Collection<CounterObject> getCounterObject1()
-	
-	
 	{
+
 		return counterObject1;
 	}
 
-	/** 
+	/**
 	 * Setter of the property <tt>counterObject1</tt>
 	 * @param counterObject1  The counterObject1 to set.
 	 * @uml.property  name="counterObject1"
 	 */
 	public void setCounterObject1(Collection<CounterObject> counterObject1)
-	
-	
 	{
+
 		this.counterObject1 = counterObject1;
 	}
-
 }

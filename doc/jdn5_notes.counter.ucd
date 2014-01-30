@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="1631,588" id="jdn5_notes.counter" metadata="uml2-1.0" initialized="true" tag="1000" key="32303037303533312D31303030204A646E352D6E6F7465732F6A646E35">
-  <children xsi:type="editmodel:ClassEditModel" name="CounterObject" location="435,60" size="147,283" id="jdn5_notes.counter/CounterObject" runTimeClassModel="count,CounterObject(Ljava.lang.String;),setName(Ljava.lang.String;),CounterObject(),increment(),getCount(),setTime(Ljava.util.Date;),getTime(),getName(),time,setCount(I),name,showData()">
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="1571,588" id="jdn5_notes.counter" metadata="uml2-1.0" initialized="true" tag="1000" key="32303037303533312D31303030204A646E352D6E6F7465732F6A646E35">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0" name="CounterObject" location="435,60" size="147,283" id="jdn5_notes.counter/CounterObject" runTimeClassModel="count,CounterObject(Ljava.lang.String;),setName(Ljava.lang.String;),CounterObject(),increment(),getCount(),setTime(Ljava.util.Date;),getTime(),getName(),time,setCount(I),name,showData()">
     <children xsi:type="editmodel:CompartmentEditModel" size="82,54">
       <children xsi:type="editmodel:AttributeEditModel" name="count" id="jdn5_notes.counter/CounterObject#count"/>
       <children xsi:type="editmodel:AttributeEditModel" name="name" id="jdn5_notes.counter/CounterObject#name"/>
@@ -19,20 +19,9 @@
       <children xsi:type="editmodel:MethodEditModel" name="showData" id="jdn5_notes.counter/CounterObject#showData()"/>
     </children>
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
-    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="jdn5_notes.counter/CounterActivity@counterActivity1+jdn5_notes.counter/CounterObject@counterObject1" source="//@children.0" target="//@children.1" targetEnd="//@children.0/@sourceConnections.0/@children.1" label="//@children.0/@sourceConnections.0/@children.2" sourceEnd="//@children.0/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
-      <children xsi:type="editmodel:AssociationEndEditModel" name="counterObject1" location="0,73" id="jdn5_notes.counter/CounterActivity@counterActivity1+jdn5_notes.counter/CounterObject@counterObject1|jdn5_notes.counter/CounterObject#counterObject1" attachSource="true" multiplicityLabel="//@children.0/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.0/@sourceConnections.0/@children.0/@children.0" aggregationKind="Aggregration" navigable="true">
-        <children xsi:type="editmodel:LabelEditModel" name="- counterObject1" location="344,113" size="84,13" anchorKind="FirstPart"/>
-        <children xsi:type="editmodel:LabelEditModel" name="*" location="423,140" size="5,13" anchorKind="FirstPart"/>
-      </children>
-      <children xsi:type="editmodel:AssociationEndEditModel" name="counterActivity1" location="196,83" id="jdn5_notes.counter/CounterActivity@counterActivity1+jdn5_notes.counter/CounterObject@counterObject1|jdn5_notes.counter/CounterActivity#counterActivity1" multiplicityLabel="//@children.0/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.0/@sourceConnections.0/@children.1/@children.0" navigable="true">
-        <children xsi:type="editmodel:LabelEditModel" name=" - counterActivity1" location="263,113" size="93,13" anchorKind="LastPart"/>
-        <children xsi:type="editmodel:LabelEditModel" name="*" location="263,140" size="5,13" anchorKind="LastPart"/>
-      </children>
-      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
-    </sourceConnections>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
   </children>
-  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.0" name="CounterActivity" location="60,50" size="196,157" id="jdn5_notes.counter/CounterActivity" runTimeClassModel="newCounter(Landroid.view.View;),onCreateOptionsMenu(Landroid.view.Menu;),gson">
+  <children xsi:type="editmodel:ClassEditModel" name="CounterActivity" location="105,60" size="196,157" id="jdn5_notes.counter/CounterActivity" runTimeClassModel="newCounter(Landroid.view.View;),onCreateOptionsMenu(Landroid.view.Menu;),gson">
     <children xsi:type="editmodel:CompartmentEditModel" size="173,72">
       <children xsi:type="editmodel:AttributeEditModel" name="createcounter" id="jdn5_notes.counter/CounterActivity#createcounter"/>
       <children xsi:type="editmodel:AttributeEditModel" name="list" id="jdn5_notes.counter/CounterActivity#list"/>
@@ -44,6 +33,17 @@
       <children xsi:type="editmodel:MethodEditModel" name="onCreateOptionsMenu" id="jdn5_notes.counter/CounterActivity#onCreateOptionsMenu(Landroid.view.Menu;)"/>
     </children>
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="jdn5_notes.counter/CounterObject@counterObject1+jdn5_notes.counter/CounterActivity@counterActivity1" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.0/@children.1" label="//@children.1/@sourceConnections.0/@children.2" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="counterActivity1" location="196,78" id="jdn5_notes.counter/CounterObject@counterObject1+jdn5_notes.counter/CounterActivity@counterActivity1|jdn5_notes.counter/CounterActivity#counterActivity1" attachSource="true" multiplicityLabel="//@children.1/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.1/@sourceConnections.0/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - counterActivity1" location="308,118" size="93,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="308,145" size="5,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="counterObject1" location="0,78" id="jdn5_notes.counter/CounterObject@counterObject1+jdn5_notes.counter/CounterActivity@counterActivity1|jdn5_notes.counter/CounterObject#counterObject1" multiplicityLabel="//@children.1/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.1/@sourceConnections.0/@children.1/@children.0" aggregationKind="Aggregration" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - counterObject1" location="341,118" size="87,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="423,145" size="5,13" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+    </sourceConnections>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
   </children>
   <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=1;Product=eUML2" autoName="false"/>
