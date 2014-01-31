@@ -1,3 +1,9 @@
+// CounterObject.java:
+// The object class for a counter.  Design of the class is currently incomplete.
+// The counter object contains operations that are appllied specifically to the
+// object itself, including getters and setters, two different constructors, and 
+// the ability to increment its count.
+
 package jdn5_notes.counter;
 
 import java.util.Date;
