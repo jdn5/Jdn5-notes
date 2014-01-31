@@ -1,3 +1,10 @@
+// CounterActivity.Java:
+// The primary class for the counter application.
+// The coding is very incomplete, but still compiles and launches.
+// The file is intended to handle the operation of the counter application,
+// which itself contains a list of Counter Objects that are meant to be displayed
+// to the user, and be able to be incremented or removed.
+
 package jdn5_notes.counter;
 
 import java.io.BufferedReader;
